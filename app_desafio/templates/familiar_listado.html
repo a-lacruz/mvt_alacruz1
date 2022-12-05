@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Familiares</h1>
+
+    <ul>
+        {% for Familiar in app_desafio %}
+            <p><li><strong>Nombre:</strong> {{Familiar.nombre}}, <strong>Apellido:</strong> {{Familiar.apellido}}, <strong>Fecha_Nacimiento:</strong> {{Familiar.fecha_nacimiento}}, <strong>Parentesco:</strong> {{Familiar.parentesco}} </li></p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
